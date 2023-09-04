@@ -58,12 +58,16 @@ const NavBarT2 = () => {
                 : "#161535",
           }}
         >
-          <img
-            src={Logo}
-            className="h-12 2xl:h-16"
-            alt=""
-            onClick={() => navigate("/")}
-          />
+          <div className="h-12 2xl:h-16">
+            {header == "white" && (
+              <img
+                src={Logo}
+                className="h-12 2xl:h-16"
+                alt=""
+                onClick={() => navigate("/")}
+              />
+            )}
+          </div>
           {NavElement.map((e) => (
             <LinkElement
               key={e.link}
