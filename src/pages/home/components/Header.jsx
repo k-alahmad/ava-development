@@ -16,7 +16,7 @@ const Header = () => {
         className="object-center object-contain absolute bottom-7 left-[9%] h-[95%]"
         alt=""
       />
-      <div className="absolute top-[20%] right-[10%] w-[40%] uppercase text-white ">
+      <div className="absolute top-[20%] right-[10%] w-[40%] uppercase text-white">
         <AnimatedText text={"AVA RESIDENTIAL 1"} className={"text-7xl"} />
         <AnimatedText
           text={
@@ -26,8 +26,6 @@ const Header = () => {
           staggerDuration={"0.006"}
           hiddenLetterY={"200px"}
         />
-
-        <p className=""></p>
       </div>
     </div>
   );
