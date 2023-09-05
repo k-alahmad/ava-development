@@ -14,7 +14,7 @@ const Footer = () => {
       style={{
         background: "linear-gradient(132deg, #161535 40%, white 200%)",
       }}
-      className="max-w-[1920px] w-full "
+      className="max-w-[1920px] w-full relative z-20"
     >
       <div className="grid md:grid-cols-2 w-full px-[3%] py-[3%] justify-items-center  ">
         <div className="max-md:w-[80%] text-base md:text-lg text-offWhite space-y-3 flex flex-col">
