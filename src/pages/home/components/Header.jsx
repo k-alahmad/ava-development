@@ -6,23 +6,32 @@ import AnimatedText from "../../../components/UI/AnimatedText";
 const Header = () => {
   return (
     <div className="relative h-screen">
-      <img src={bg} className="object-top object-fill w-full h-full" alt="" />
+      <img
+        src={bg}
+        className="object-top object-cover object-left w-full h-full"
+        alt="background Header"
+      />
 
       <motion.img
         initial={{ opacity: 0, y: "100%" }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: "0.7" }}
         src={tower}
-        className="object-center object-contain absolute bottom-7 left-[9%] h-[95%]"
+        className="object-center object-contain absolute bottom-7 max-md:left-[20%] md:left-[9%] h-[95%]"
         alt=""
       />
-      <div className="absolute top-[20%] right-[10%] w-[40%] uppercase text-white">
-        <AnimatedText text={"AVA RESIDENTIAL 1"} className={"text-7xl"} />
+      <div className="absolute top-[20%] md:right-[10%] w-full md:w-[40%] uppercase text-white max-md:text-center max-md:px-[5%]">
+        <AnimatedText
+          text={"AVA RESIDENTIAL 1"}
+          className={"p-1 text-5xl lg:text-7xl"}
+        />
         <AnimatedText
           text={
             "ava RESIDENTIAL 1 features spacious, elegantly designed apartments and top-notch amenities, including a fitness center, swimming pool, and more. it's a gated community for added security and peace of mind"
           }
-          className={"text-3xl mt-5 p-4 bg-white/10 "}
+          className={
+            "text-xl md:text-3xl mt-5 p-4 max-md:bg-black/30 max-md:backdrop-blur-[10px] md:bg-white/10"
+          }
           staggerDuration={"0.006"}
           hiddenLetterY={"200px"}
         />
