@@ -44,7 +44,7 @@ const NavBarT2 = () => {
             header == "white"
               ? "shadow-2xl border-transparent"
               : "shadow-0 border-gray-400"
-          } transition-all duration-500 z-40 fixed max-w-[1920px] w-full top-0 px-2 xl:px-12 py-4 flex justify-between md:justify-start items-center  md:gap-x-24`}
+          } transition-all duration-500 z-40 fixed max-w-[1920px] w-full top-0 px-2 xl:px-12 py-4 flex justify-end md:justify-end items-center  md:gap-x-24`}
           style={{
             background:
               header === "white"
@@ -59,14 +59,16 @@ const NavBarT2 = () => {
           }}
         >
           <div className="h-12 2xl:h-16">
-            {header == "white" && (
-              <img
-                src={Logo}
-                className="h-12 2xl:h-16"
-                alt=""
-                onClick={() => navigate("/")}
-              />
-            )}
+            <img
+              src={Logo}
+              className={`h-full w-full transition-all duration-300 ${
+                header == "white"
+                  ? "scale-100"
+                  : "max-md:scale-150 md:scale-[3] md:-translate-x-12 md:translate-y-12"
+              }`}
+              alt=""
+              onClick={() => navigate("/")}
+            />
           </div>
           {NavElement.map((e) => (
             <LinkElement

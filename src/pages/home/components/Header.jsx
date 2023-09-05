@@ -23,7 +23,9 @@ const Header = () => {
       <div className="absolute top-[20%] md:right-[10%] w-full md:w-[40%] uppercase text-white max-md:text-center max-md:px-[5%]">
         <AnimatedText
           text={"AVA RESIDENTIAL 1"}
-          className={"p-1 text-5xl lg:text-7xl"}
+          className={
+            "text-5xl lg:text-7xl p-4 max-md:bg-black/30 max-md:backdrop-blur-[10px] md:bg-white/10"
+          }
         />
         <AnimatedText
           text={
