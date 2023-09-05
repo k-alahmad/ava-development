@@ -17,7 +17,7 @@ const Header = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: "0.7" }}
         src={tower}
-        className="object-center object-contain absolute bottom-7 max-md:left-[20%] md:left-[9%] h-[95%]"
+        className="object-center object-contain absolute bottom-0 max-md:left-[20%] md:left-[7%] h-[95%]"
         alt=""
       />
       <div className="absolute top-[20%] md:right-[10%] w-full md:w-[40%] uppercase text-white max-md:text-center max-md:px-[5%]">

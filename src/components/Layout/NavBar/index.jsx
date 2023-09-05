@@ -64,7 +64,7 @@ const NavBarT2 = () => {
               className={`h-full w-full transition-all duration-300 ${
                 header == "white"
                   ? "scale-100"
-                  : "max-md:scale-150 md:scale-[3] md:-translate-x-12 md:translate-y-12"
+                  : "max-md:scale-150 md:scale-[2.5] md:-translate-x-12 md:translate-y-12"
               }`}
               alt=""
               onClick={() => navigate("/")}
