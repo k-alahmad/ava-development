@@ -8,7 +8,7 @@ const Header = () => {
     <div className="relative h-screen">
       <img
         src={bg}
-        className="object-top object-cover object-left w-full h-full"
+        className="object-cover object-left w-full h-full"
         alt="background Header"
       />
 
