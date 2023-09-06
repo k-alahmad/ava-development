@@ -1,6 +1,6 @@
 import React from "react";
 import bg from "../../../assets/images/background.webp";
-import tower from "../../../assets/images/tower.webp"; //fixes
+import tower from "../../../assets/images/tower.webp";
 import { motion } from "framer-motion";
 import AnimatedText from "../../../components/UI/AnimatedText";
 const Header = () => {
